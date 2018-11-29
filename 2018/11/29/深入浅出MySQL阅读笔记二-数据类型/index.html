@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT,codinger,Java">
+  <meta name="keywords" content="数据库,MySQL,MySQL数据库,关系型数据库,深入浅出MySQL,MySQL数据类型,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="本站是扣腚鳄的技术分享博客。内容涵盖生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构等相关的研究与知识分享。">
-<meta name="keywords" content="codinger,扣腚鳄,Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,生活故事,架构,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,">
-<meta property="og:type" content="website">
-<meta property="og:title" content="扣腚鳄">
-<meta property="og:url" content="http://www.codinger.com.cn/page/3/index.html">
+<meta name="description" content="深入浅出MySQL阅读笔记二:数据类型1. 数值类型MySQL 支持所有标准 SQL 中的数值类型，其中包括严格数值类型（INTEGER、SMALLINT、DECIMAL 和 NUMERIC），以及近似数值数据类型（FLOAT、REAL 和 DOUBLE PRECISION），并在此基础上做了扩展。扩展后增加了 TINYINT、MEDIUMINT 和 BIGINT 这 3 种长度不同的整型，并增加">
+<meta name="keywords" content="数据库,MySQL,MySQL数据库,关系型数据库,深入浅出MySQL,MySQL数据类型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深入浅出MySQL阅读笔记二:数据类型">
+<meta property="og:url" content="http://www.codinger.com.cn/2018/11/29/深入浅出MySQL阅读笔记二-数据类型/index.html">
 <meta property="og:site_name" content="扣腚鳄">
-<meta property="og:description" content="本站是扣腚鳄的技术分享博客。内容涵盖生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构等相关的研究与知识分享。">
+<meta property="og:description" content="深入浅出MySQL阅读笔记二:数据类型1. 数值类型MySQL 支持所有标准 SQL 中的数值类型，其中包括严格数值类型（INTEGER、SMALLINT、DECIMAL 和 NUMERIC），以及近似数值数据类型（FLOAT、REAL 和 DOUBLE PRECISION），并在此基础上做了扩展。扩展后增加了 TINYINT、MEDIUMINT 和 BIGINT 这 3 种长度不同的整型，并增加">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2018-11-29T07:44:02.068Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="扣腚鳄">
-<meta name="twitter:description" content="本站是扣腚鳄的技术分享博客。内容涵盖生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构等相关的研究与知识分享。">
+<meta name="twitter:title" content="深入浅出MySQL阅读笔记二:数据类型">
+<meta name="twitter:description" content="深入浅出MySQL阅读笔记二:数据类型1. 数值类型MySQL 支持所有标准 SQL 中的数值类型，其中包括严格数值类型（INTEGER、SMALLINT、DECIMAL 和 NUMERIC），以及近似数值数据类型（FLOAT、REAL 和 DOUBLE PRECISION），并在此基础上做了扩展。扩展后增加了 TINYINT、MEDIUMINT 和 BIGINT 这 3 种长度不同的整型，并增加">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://www.codinger.com.cn/page/3/">
+  <link rel="canonical" href="http://www.codinger.com.cn/2018/11/29/深入浅出MySQL阅读笔记二-数据类型/">
 
 
 
 
 
-  <title>扣腚鳄</title>
+  <title>深入浅出MySQL阅读笔记二:数据类型 | 扣腚鳄</title>
   
 
 
@@ -144,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -258,9 +258,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -290,9 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/29/深入浅出MySQL阅读笔记二-数据类型/" itemprop="url">深入浅出MySQL阅读笔记二:数据类型</a></h1>
+          <h1 class="post-title" itemprop="name headline">深入浅出MySQL阅读笔记二:数据类型</h1>
         
 
         <div class="post-meta">
@@ -386,9 +384,7 @@
       
 
       
-        
-          
-            <h1 id="深入浅出MySQL阅读笔记二-数据类型"><a href="#深入浅出MySQL阅读笔记二-数据类型" class="headerlink" title="深入浅出MySQL阅读笔记二:数据类型"></a>深入浅出MySQL阅读笔记二:数据类型</h1><h2 id="1-数值类型"><a href="#1-数值类型" class="headerlink" title="1. 数值类型"></a>1. 数值类型</h2><p>MySQL 支持所有标准 SQL 中的数值类型，其中包括严格数值类型（INTEGER、SMALLINT、<br>DECIMAL 和 NUMERIC），以及近似数值数据类型（FLOAT、REAL 和 DOUBLE PRECISION），并<br>在此基础上做了扩展。扩展后增加了 TINYINT、MEDIUMINT 和 BIGINT 这 3 种长度不同的整<br>型，并增加了 BIT 类型，用来存放位数据。表 3-1 中列出了 MySQL 5.0 中支持的所有数值类<br>型，其中 INT 是 INTEGER 的同名词，DEC 是 DECIMAL 的同名词。</p>
+        <h1 id="深入浅出MySQL阅读笔记二-数据类型"><a href="#深入浅出MySQL阅读笔记二-数据类型" class="headerlink" title="深入浅出MySQL阅读笔记二:数据类型"></a>深入浅出MySQL阅读笔记二:数据类型</h1><h2 id="1-数值类型"><a href="#1-数值类型" class="headerlink" title="1. 数值类型"></a>1. 数值类型</h2><p>MySQL 支持所有标准 SQL 中的数值类型，其中包括严格数值类型（INTEGER、SMALLINT、<br>DECIMAL 和 NUMERIC），以及近似数值数据类型（FLOAT、REAL 和 DOUBLE PRECISION），并<br>在此基础上做了扩展。扩展后增加了 TINYINT、MEDIUMINT 和 BIGINT 这 3 种长度不同的整<br>型，并增加了 BIT 类型，用来存放位数据。表 3-1 中列出了 MySQL 5.0 中支持的所有数值类<br>型，其中 INT 是 INTEGER 的同名词，DEC 是 DECIMAL 的同名词。</p>
 <table>
 <thead>
 <tr>
@@ -686,8 +682,6 @@
 <p>去重,(‘a’,’b’,’a’)–&gt;(‘a’,’b’)</p>
 <h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>本章主要介绍了 MySQL 支持的各种数据类型，并通过多个实例对它们的使用方法做了详细<br>的说明。学完本章后，读者可以对每种数据类型的用途、物理存储、表示范围等有一个概要<br>的了解。这样在面对具体应用时，就可以根据相应的特点来选择合适的数据类型，使得我们<br>能够争取在满足应用的基础上，用较小的存储代价换来较高的数据库性能。</p>
 
-          
-        
       
     </div>
     
@@ -702,14 +696,50 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/数据库/" rel="tag"># 数据库</a>
+          
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          
+            <a href="/tags/MySQL数据库/" rel="tag"># MySQL数据库</a>
+          
+            <a href="/tags/关系型数据库/" rel="tag"># 关系型数据库</a>
+          
+            <a href="/tags/深入浅出MySQL/" rel="tag"># 深入浅出MySQL</a>
+          
+            <a href="/tags/MySQL数据类型/" rel="tag"># MySQL数据类型</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/29/深入浅出MySQL阅读笔记一-SQL基础/" rel="next" title="深入浅出MySQL阅读笔记一:SQL基础">
+                <i class="fa fa-chevron-left"></i> 深入浅出MySQL阅读笔记一:SQL基础
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/29/深入浅出MySQL阅读笔记三-运算符/" rel="prev" title="深入浅出MySQL阅读笔记三:运算符">
+                深入浅出MySQL阅读笔记三:运算符 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -719,14 +749,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -734,6 +761,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -754,8 +785,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -827,6 +867,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#深入浅出MySQL阅读笔记二-数据类型"><span class="nav-number">1.</span> <span class="nav-text">深入浅出MySQL阅读笔记二:数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-数值类型"><span class="nav-number">1.1.</span> <span class="nav-text">1. 数值类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-整数"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 整数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-小数"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 小数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-位类型-bit"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3 位类型(bit)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-日起时间类型"><span class="nav-number">1.2.</span> <span class="nav-text">2. 日起时间类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-字符串类型"><span class="nav-number">1.3.</span> <span class="nav-text">3. 字符串类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-char和varchar"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 char和varchar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-enum类型"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 enum类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-set类型"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.3 set类型</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小结"><span class="nav-number">2.</span> <span class="nav-text">小结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -967,6 +1023,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
