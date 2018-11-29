@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content=",,,,,,">
+  <meta name="keywords" content=",,,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="深入浅出MySQL阅读笔记三:运算符1. 算术运算符   运算符 作用     + 加法   - 减法   * 乘法   /，DIV 除法，返回商   %，MOD 除法，返回余数    123456mysql&amp;gt; select 4 DIV 2,3 DIV 7,3/7,MOD(7,3);+---------+---------+--------+----------+| 4 DIV 2 | 3">
-<meta name="keywords" content="数据库,MySQL,MySQL数据库,关系型数据库,深入浅出MySQL,MySQL运算符">
+<meta name="description" content="linux常用指令(一):链接指令1. 文件链接的定义1.1 什么是文件链接,要从文件储存说起。在linux系统中,文件储存在硬盘上，硬盘的最小存储单位叫做”扇区”（Sector）。每个扇区储存512字节（相当于0.5KB）。 操作系统读取硬盘的时候，不会一个个扇区地读取，这样效率太低，而是一次性连续读取多个扇区，即一次性读取一个”块”（block）。这种由多个扇区组成的”块”，是文件存取的最小单">
+<meta name="keywords" content="linux,linux操作系统,linux常用指令">
 <meta property="og:type" content="website">
-<meta property="og:title" content="深入浅出MySQL阅读笔记三:运算符">
-<meta property="og:url" content="http://www.codinger.com.cn/database-mysql-深入浅出MySQL阅读笔记/深入浅出MySQL阅读笔记三-运算符.html">
+<meta property="og:title" content="linux常用指令(一):链接指令">
+<meta property="og:url" content="http://www.codinger.com.cn/linux/常用指令/linux常用指令-一-链接指令.html">
 <meta property="og:site_name" content="扣腚鳄">
-<meta property="og:description" content="深入浅出MySQL阅读笔记三:运算符1. 算术运算符   运算符 作用     + 加法   - 减法   * 乘法   /，DIV 除法，返回商   %，MOD 除法，返回余数    123456mysql&amp;gt; select 4 DIV 2,3 DIV 7,3/7,MOD(7,3);+---------+---------+--------+----------+| 4 DIV 2 | 3">
+<meta property="og:description" content="linux常用指令(一):链接指令1. 文件链接的定义1.1 什么是文件链接,要从文件储存说起。在linux系统中,文件储存在硬盘上，硬盘的最小存储单位叫做”扇区”（Sector）。每个扇区储存512字节（相当于0.5KB）。 操作系统读取硬盘的时候，不会一个个扇区地读取，这样效率太低，而是一次性连续读取多个扇区，即一次性读取一个”块”（block）。这种由多个扇区组成的”块”，是文件存取的最小单">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-11-29T07:45:18.104Z">
+<meta property="og:updated_time" content="2018-11-29T09:01:19.477Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="深入浅出MySQL阅读笔记三:运算符">
-<meta name="twitter:description" content="深入浅出MySQL阅读笔记三:运算符1. 算术运算符   运算符 作用     + 加法   - 减法   * 乘法   /，DIV 除法，返回商   %，MOD 除法，返回余数    123456mysql&amp;gt; select 4 DIV 2,3 DIV 7,3/7,MOD(7,3);+---------+---------+--------+----------+| 4 DIV 2 | 3">
+<meta name="twitter:title" content="linux常用指令(一):链接指令">
+<meta name="twitter:description" content="linux常用指令(一):链接指令1. 文件链接的定义1.1 什么是文件链接,要从文件储存说起。在linux系统中,文件储存在硬盘上，硬盘的最小存储单位叫做”扇区”（Sector）。每个扇区储存512字节（相当于0.5KB）。 操作系统读取硬盘的时候，不会一个个扇区地读取，这样效率太低，而是一次性连续读取多个扇区，即一次性读取一个”块”（block）。这种由多个扇区组成的”块”，是文件存取的最小单">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://www.codinger.com.cn/database-mysql-深入浅出MySQL阅读笔记/深入浅出MySQL阅读笔记三-运算符.html">
+  <link rel="canonical" href="http://www.codinger.com.cn/linux/常用指令/linux常用指令-一-链接指令.html">
 
 
 
 
 
-  <title>深入浅出MySQL阅读笔记三:运算符 | 扣腚鳄</title>
+  <title>linux常用指令(一):链接指令 | 扣腚鳄</title>
   
 
 
@@ -266,7 +266,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">深入浅出MySQL阅读笔记三:运算符</h1>
+	<h1 class="post-title" itemprop="name headline">linux常用指令(一):链接指令</h1>
 
 
 
@@ -278,170 +278,57 @@
       <div class="post-body">
         
         
-          <h1 id="深入浅出MySQL阅读笔记三-运算符"><a href="#深入浅出MySQL阅读笔记三-运算符" class="headerlink" title="深入浅出MySQL阅读笔记三:运算符"></a>深入浅出MySQL阅读笔记三:运算符</h1><h2 id="1-算术运算符"><a href="#1-算术运算符" class="headerlink" title="1. 算术运算符"></a>1. 算术运算符</h2><table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>+</td>
-<td>加法</td>
-</tr>
-<tr>
-<td>-</td>
-<td>减法</td>
-</tr>
-<tr>
-<td>*</td>
-<td>乘法</td>
-</tr>
-<tr>
-<td>/，DIV</td>
-<td>除法，返回商</td>
-</tr>
-<tr>
-<td>%，MOD</td>
-<td>除法，返回余数</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; select 4 DIV 2,3 DIV 7,3/7,MOD(7,3);</span><br><span class="line">+---------+---------+--------+----------+</span><br><span class="line">| 4 DIV 2 | 3 DIV 7 | 3/7    | MOD(7,3) |</span><br><span class="line">+---------+---------+--------+----------+</span><br><span class="line">|       2 |       0 | 0.4286 |        1 |</span><br><span class="line">+---------+---------+--------+----------+</span><br></pre></td></tr></table></figure>
-<h2 id="2-比较运算符"><a href="#2-比较运算符" class="headerlink" title="2. 比较运算符"></a>2. 比较运算符</h2><table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>=</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>&lt;&gt;或!=</td>
-<td>不等于</td>
-</tr>
-<tr>
-<td>&lt;=&gt; NULL</td>
-<td>安全的等于(NULL-safe)</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>&lt;=</td>
-<td>小于等于</td>
-</tr>
-<tr>
-<td>></td>
-<td>大于</td>
-</tr>
-<tr>
-<td>>=</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>BETWEEN</td>
-<td>存在与指定范围</td>
-</tr>
-<tr>
-<td>IN</td>
-<td>存在于指定集合</td>
-</tr>
-<tr>
-<td>IS NULL</td>
-<td>为 NULL</td>
-</tr>
-<tr>
-<td>IS NOT NULL</td>
-<td>不为 NULL</td>
-</tr>
-<tr>
-<td>LIKE</td>
-<td>通配符匹配</td>
-</tr>
-<tr>
-<td>REGEXP 或 RLIKE</td>
-<td>正则表达式匹配</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">-- &lt;=&gt;和=的区别</span><br><span class="line">mysql&gt; select 1=1,null = null,null &lt;=&gt; null;</span><br><span class="line">+-----+-------------+---------------+</span><br><span class="line">| 1=1 | null = null | null &lt;=&gt; null |</span><br><span class="line">+-----+-------------+---------------+</span><br><span class="line">|   1 |        NULL |             1 |</span><br><span class="line">+-----+-------------+---------------+</span><br><span class="line">-- “REGEXP”运算符的使用格式为“str REGEXP str_pat”</span><br><span class="line">mysql&gt;  select &apos;abcdef&apos; regexp &apos;ab&apos; ,&apos;abcdefg&apos; regexp &apos;k&apos;;</span><br><span class="line">+----------------------+----------------------+</span><br><span class="line">| &apos;abcdef&apos; regexp &apos;ab&apos; | &apos;abcdefg&apos; regexp &apos;k&apos; |</span><br><span class="line">+----------------------+----------------------+</span><br><span class="line">|                    1 |                    0 |</span><br><span class="line">+----------------------+----------------------+</span><br></pre></td></tr></table></figure>
-<p><strong>比较运算符的返回结果是  1  或者  0</strong></p>
-<h2 id="3-逻辑运算符"><a href="#3-逻辑运算符" class="headerlink" title="3. 逻辑运算符"></a>3. 逻辑运算符</h2><table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>NOT 或！</td>
-<td>逻辑非</td>
-</tr>
-<tr>
-<td>AND 或&amp;&amp;</td>
-<td>逻辑与</td>
-</tr>
-<tr>
-<td>OR 或 \</td>
-<td>\</td>
-<td></td>
-<td>逻辑或</td>
-</tr>
-<tr>
-<td>XOR</td>
-<td>逻辑异或</td>
-</tr>
-</tbody>
-</table>
-<p><code>XOR</code>:</p>
-<ul>
-<li>有null,返回null</li>
-<li>没有null,同0异1</li>
-</ul>
-<h2 id="4-位运算符"><a href="#4-位运算符" class="headerlink" title="4. 位运算符"></a>4. 位运算符</h2><table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&amp;</td>
-<td>位与（位 AND）</td>
-</tr>
-<tr>
-<td>\</td>
-<td></td>
-<td>位或 （位 OR ）</td>
-</tr>
-<tr>
-<td>\^</td>
-<td>位异或（位 XOR）</td>
-</tr>
-<tr>
-<td>~</td>
-<td>位取反</td>
-</tr>
-<tr>
-<td>>></td>
-<td>位右移</td>
-</tr>
-<tr>
-<td>&lt;&lt;</td>
-<td>位左移</td>
-</tr>
-</tbody>
-</table>
-<h2 id="5-小结"><a href="#5-小结" class="headerlink" title="5. 小结"></a>5. 小结</h2><p>本章主要介绍了 MySQL 中支持的各种运算符。这些运算符可以帮助用户完成算术、比较、<br>逻辑和位逻辑操作，大家在使用时要注意运算符的优先级。另外，在使用比较运算符时要保<br>证比较的操作数类型是一致的，这样可以避免由于操作数类型的不一致而得出错误的数据。</p>
+          <h1 id="linux常用指令-一-链接指令"><a href="#linux常用指令-一-链接指令" class="headerlink" title="linux常用指令(一):链接指令"></a>linux常用指令(一):链接指令</h1><h2 id="1-文件链接的定义"><a href="#1-文件链接的定义" class="headerlink" title="1. 文件链接的定义"></a>1. 文件链接的定义</h2><h3 id="1-1-什么是文件链接-要从文件储存说起。"><a href="#1-1-什么是文件链接-要从文件储存说起。" class="headerlink" title="1.1 什么是文件链接,要从文件储存说起。"></a>1.1 什么是文件链接,要从文件储存说起。</h3><p>在linux系统中,文件储存在硬盘上，硬盘的最小存储单位叫做”扇区”（Sector）。每个扇区储存512字节（相当于0.5KB）。</p>
+<p>操作系统读取硬盘的时候，不会一个个扇区地读取，这样效率太低，而是一次性连续读取多个扇区，即一次性读取一个”块”（block）。这种由多个扇区组成的”块”，是文件存取的最小单位。”块”的大小，最常见的是4KB，即连续八个 sector组成一个 block。</p>
+<p>文件数据都储存在”块”中，那么很显然，我们还必须找到一个地方储存文件的元信息，比如文件的创建者、文件的创建日期、文件的大小等等。这种储存文件元信息的区域就叫做inode，中文译名为”索引节点”。</p>
+<p><strong>每一个文件一定有一个inode，但一个inode可以对应多个文件(这就是硬链接)。</strong></p>
+<p>由于每个文件都必须有一个inode，因此有可能发生inode已经用光，但是硬盘还未存满的情况。这时，就无法在硬盘上创建新文件。</p>
+<p>每个inode都有一个号码，操作系统用inode号码来识别不同的文件。</p>
+<p>这里值得重复一遍，Unix/Linux系统内部不使用文件名，而使用inode号码来识别文件。对于系统来说，文件名只是inode号码便于识别的别称或者绰号。</p>
+<p>表面上，用户通过文件名，打开文件。实际上，系统内部这个过程分成三步：首先，系统找到这个文件名对应的inode号码；其次，通过inode号码，获取inode信息；最后，根据inode信息，找到文件数据所在的block，读出数据。</p>
+<p><code>查看文件的inode号码</code><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -i filename</span><br></pre></td></tr></table></figure></p>
+<p><code>查看文件的inode信息</code><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">stat</span> filename</span><br></pre></td></tr></table></figure></p>
+<h2 id="2-链接指令描述"><a href="#2-链接指令描述" class="headerlink" title="2. 链接指令描述"></a>2. 链接指令描述</h2><p> ln: link的缩写</p>
+<blockquote>
+<p><code>命令所在路径</code>：/bin/link</p>
+</blockquote>
+<blockquote>
+<p><code>执行权限</code>：所有用户</p>
+</blockquote>
+<blockquote>
+<p><code>功能描述</code>：生成链接文件</p>
+</blockquote>
+<blockquote>
+<p><code>语法</code>： ln -s 【源文件】【目标文件】<br>　　　　　  -s 　　 创建软链接<br>　　　　　不加 -s   创建硬链接</p>
+</blockquote>
+<h3 id="2-1-硬链接"><a href="#2-1-硬链接" class="headerlink" title="2.1 硬链接"></a>2.1 硬链接</h3><p>上面说过,多个文件名指向同一个inode号码的情况称为硬链接(hard link)</p>
+<p>也就是说,可以用不同的文件名访问同样的内容(内容实际上在存储上只有一份),对其中一份文件的修改会影响其他所有文件</p>
+<p><code>创建硬链接</code><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln originalFileName targetFileName</span><br></pre></td></tr></table></figure></p>
+<p>e.g.</p>
+<p>创建文件 /etc/issue 的硬链接 /tmp/issue.hard：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln  /etc/issue /tmp/issue.hard</span><br></pre></td></tr></table></figure></p>
+<p>创建硬链接后,inode节点信息中链接数加1,当inode节点的链接数为0,系统会回收inode,释放对应的block区块</p>
+<h3 id="2-2-软链接"><a href="#2-2-软链接" class="headerlink" title="2.2 软链接"></a>2.2 软链接</h3><p>文件A的内容是文件B的路径,这种情况较软链接(soft link)</p>
+<p>文件A是依存文件B的,删除文件B,打开A会<code>no such file or directoroy</code></p>
+<p><code>创建软链接</code><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s originalFileName targetFileName</span><br></pre></td></tr></table></figure></p>
+<p>e.g.</p>
+<p>创建文件 /etc/issue 的软链接 /tmp/issue.soft：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /etc/issue /tmp/issue.soft</span><br></pre></td></tr></table></figure></p>
+<p><strong>软链接的硬链接的区别:</strong></p>
+<p>1.<code>软链接</code>是文件A指向文件B</p>
+<ol start="2">
+<li><p><code>硬链接</code>是文件A和文件B都指向同一个inode</p>
+</li>
+<li><p>软链接 前面是 l 开头的（link）,而硬链接是 - 开头，表示文件</p>
+</li>
+<li><p>软链接类似与 windows 的快捷方式，有一个明显的箭头指向，而指向的是源文件</p>
+</li>
+<li><p>通过 ls -i 操作，来查看 文件的 i 节点。发现硬链接和源文件的 i 节点是相同的，而软链接与源文件的 i 节点是不同的</p>
+</li>
+<li><p>不允许将硬链接指向目录；不允许跨分区创建硬链接</p>
+</li>
+</ol>
+<p>以上参考: <a href="https://www.cnblogs.com/ysocean/p/7712425.html" target="_blank" rel="noopener">https://www.cnblogs.com/ysocean/p/7712425.html</a></p>
+<p><a href="https://www.cnblogs.com/ysocean/p/7712417.html" target="_blank" rel="noopener">https://www.cnblogs.com/ysocean/p/7712417.html</a></p>
+<p><a href="https://blog.csdn.net/cc_946079647/article/details/19088205" target="_blank" rel="noopener">https://blog.csdn.net/cc_946079647/article/details/19088205</a> 其中有关于目录文件的解释</p>
 
         
       </div>
@@ -576,7 +463,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#深入浅出MySQL阅读笔记三-运算符"><span class="nav-number">1.</span> <span class="nav-text">深入浅出MySQL阅读笔记三:运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-算术运算符"><span class="nav-number">1.1.</span> <span class="nav-text">1. 算术运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-比较运算符"><span class="nav-number">1.2.</span> <span class="nav-text">2. 比较运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-逻辑运算符"><span class="nav-number">1.3.</span> <span class="nav-text">3. 逻辑运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-位运算符"><span class="nav-number">1.4.</span> <span class="nav-text">4. 位运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-小结"><span class="nav-number">1.5.</span> <span class="nav-text">5. 小结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#linux常用指令-一-链接指令"><span class="nav-number">1.</span> <span class="nav-text">linux常用指令(一):链接指令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-文件链接的定义"><span class="nav-number">1.1.</span> <span class="nav-text">1. 文件链接的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-什么是文件链接-要从文件储存说起。"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 什么是文件链接,要从文件储存说起。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-链接指令描述"><span class="nav-number">1.2.</span> <span class="nav-text">2. 链接指令描述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-硬链接"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 硬链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-软链接"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 软链接</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
